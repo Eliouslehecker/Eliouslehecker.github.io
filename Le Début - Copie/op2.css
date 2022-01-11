@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: 'Berkshire Swash', cursive;
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 120px;
+}
+#imageP {
+    background-image: url(parchemin.jpg);
+    background-size: cover;
+    height: 1080px;
+  }
+nav {
+    overflow: hidden;
+    background-color: gray;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+  }
+  header li {
+    float: right;
+    font-size: 2em;
+  }
+  header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+  }
+  .button{
+    font-size: 1.5em;
+    background-color: gray;
+  }
+  .button:hover{
+    background-color: black;
+    color: gray;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  #logo {
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: bold;
+    float: left;
+  }
+#Back{
+  background-image: url(fond.png);
+    background-size: cover;
+    height: 1080px;
+}

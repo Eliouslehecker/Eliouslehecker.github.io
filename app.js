@@ -2,19 +2,19 @@ const btn = document.getElementById('button');
 
 document.getElementById('form')
  .addEventListener('submit', function(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    btn.value = 'Envoi...';
+   btn.value = 'Envoi...';
 
-    const serviceID = 'gmail';
-    const templateID = 'template_ycfgbfi';
+   const serviceID = 'gmail';
+   const templateID = 'template_ycfgbfi';
 
-    emailjs.sendForm('gmail','template_ycfgbfi', this)
-      .then(() => {
-        btn.value = 'Envoyer';
-        alert('Sent!');
+   emailjs.sendForm('gmail','template_ycfgbfi', this)
+    .then(() => {
+      btn.value = 'Envoyer';
+      alert('Sent!');
     }, (err) => {
-        btn.value = 'Envoyer';
-        alert(JSON.stringify(err));
+      btn.value = 'Envoyer';
+      alert(JSON.stringify(err));
     });
 });

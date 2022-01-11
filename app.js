@@ -6,10 +6,10 @@ document.getElementById('form')
 
    btn.value = 'Envoi...';
 
-   const serviceID = 'default_service';
+   const serviceID = 'gmail';
    const templateID = 'template_ycfgbfi';
 
-   emailjs.sendForm(serviceID, templateID, this)
+   emailjs.sendForm(gmail, template_ycfgbfi, this)
     .then(() => {
       btn.value = 'Envoyer';
       alert('Sent!');

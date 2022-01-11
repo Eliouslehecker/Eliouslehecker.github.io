@@ -9,7 +9,7 @@ document.getElementById('form')
    const serviceID = 'gmail';
    const templateID = 'template_ycfgbfi';
 
-   emailjs.sendForm('gmail', 'template_ycfgbfi', this)
+   emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Envoyer';
       alert('On est Bon !');
